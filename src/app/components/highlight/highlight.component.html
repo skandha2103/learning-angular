@@ -1,0 +1,12 @@
+<div>Pick a color</div>
+<input type="radio" name="colors" (click)="color='green'">Green
+<input type="radio" name="colors" (click)="color='yellow'">Yellow
+<input type="radio" name="colors" (click)="color='cyan'">cyan
+
+<p [appHighlightColor]="color">Highlight me</p>
+<p [appHighlightColor]="color" defaultColor="violet">Highlight me too!</p>
+
+<p><i>Mouse over the following lines to see fixed highlights</i></p>
+
+<p [appHighlightColor]="'yellow'">Highlighted in yellow</p>
+<p appHighlightColor="orange">Highlighted in orange</p>

@@ -1,0 +1,6 @@
+<div>Today's date: {{date | date}}</div>
+<div>Price: {{price | currency:"INR"}}</div>
+<div>Title: {{title | uppercase}}</div>
+
+<input type="text" [(ngModel)]="searchStr">
+<div *ngFor="let name of nameList | listfilter:searchStr">{{name}}</div>
